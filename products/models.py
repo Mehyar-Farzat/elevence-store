@@ -4,13 +4,20 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+FLAG_CHOICES = (
+
+    ('New','New'),
+    ('Sale','Sale'),
+    ('Featured','Featured'),
+)
+
 class Product(models.Model):
     name = models.CharField(max_length = 150)
     image = models.ImageField(upload_to='product')
     price = models.FloatField()
     sku = models.CharField(max_length=10)
     description = models.TextField(max_length=2000)
-    
+    flag = models.CharField(max_length=10, choices=FLAG_CHOICES)
 
 
 
