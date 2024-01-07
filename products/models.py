@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.utils.text import slugify
 
 # Create your models here.
 
@@ -18,7 +19,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=10)
     description = models.TextField(max_length=2000)
     flag = models.CharField(max_length=10, choices=FLAG_CHOICES)
-
+    slug = models.SlugField(null=True,blank=True)
 
 
 
