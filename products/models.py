@@ -18,6 +18,7 @@ class Product(models.Model):
     price = models.FloatField()
     sku = models.CharField(max_length=10)
     description = models.TextField(max_length=2000)
+    quantity = models.IntegerField()
     flag = models.CharField(max_length=10, choices=FLAG_CHOICES)
     slug = models.SlugField(null=True,blank=True)
 
@@ -40,5 +41,5 @@ class Review(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
 
-def __str__(self):
-    return str(self.product)
+    def __str__(self):
+        return str(self.product)
