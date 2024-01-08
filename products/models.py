@@ -31,6 +31,8 @@ class Product(models.Model):
         self.slug = slugify(self.name)
         super(Product,self).save(*args, **kwargs)
 
+
+
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_image')
     image = models.ImageField(upload_to='product_images')
