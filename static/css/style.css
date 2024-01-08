@@ -227,7 +227,7 @@ a {
       width: 35px;
       height: 35px;
       display: inline-block;
-      background: #2f2f2f;
+      background: white;
       bottom: 15px;
       left: 50%;
       -webkit-transform: translateX(-50%);

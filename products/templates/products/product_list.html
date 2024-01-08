@@ -11,13 +11,13 @@
 					{% for object in object_list %}
 
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
+						<a class="product-item" href="/products/{{object.slug}}">
 							<img src="{{object.image.url}}" class="img-fluid product-thumbnail">
 							<h3 class="product-title">{{object}}</h3>
 							<strong class="product-price">${{50.00}}</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{{object.icon.url}}" class="img-fluid">
 							</span>
 						</a>
 					</div> 
