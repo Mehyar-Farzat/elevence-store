@@ -15,6 +15,7 @@ FLAG_CHOICES = (
 class Product(models.Model):
     name = models.CharField(max_length = 150)
     image = models.ImageField(upload_to='product')
+    icon = models.ImageField(upload_to='product_icon' )
     price = models.FloatField()
     sku = models.CharField(max_length=10)
     description = models.TextField(max_length=2000)
