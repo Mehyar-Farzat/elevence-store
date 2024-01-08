@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     # myapps
 
     'products',
+    'settings',
+    
 
 ]
 
