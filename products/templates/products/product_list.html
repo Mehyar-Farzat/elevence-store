@@ -14,10 +14,10 @@
 						<a class="product-item" href="/products/{{object.slug}}">
 							<img src="{{object.image.url}}" class="img-fluid product-thumbnail">
 							<h3 class="product-title">{{object}}</h3>
-							<strong class="product-price">${{50.00}}</strong>
+							<strong class="product-price">${{object.price}}</strong>
 
 							<span class="icon-cross">
-								<img src="{{object.icon.url}}" class="img-fluid">
+								{% comment %} <img src="{{object.icon.url}}" class="img-fluid"> {% endcomment %}
 							</span>
 						</a>
 					</div> 
