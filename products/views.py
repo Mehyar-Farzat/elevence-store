@@ -1,15 +1,15 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView         # CBV
-from .models import Product, ProductImage
+from django.views.generic import ListView, DetailView         
+from .models import Product, ProductImage                  
 
 
 
 
-class ProductList(ListView):
+class ProductList(ListView):       
     model = Product
 
 
-class ProductDetail(DetailView):
+class ProductDetail(DetailView):          
     model = Product
 
     # return extra data for product detail like image
